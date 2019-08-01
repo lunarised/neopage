@@ -11,10 +11,17 @@
 <div class="logo">
 <?PHP
 $o = shell_exec("neofetch | aha -n");
-$o = str_replace('--------------', '</div><div class=\'nfData\'>', $o);
+$oe = explode('--------------- ', $o);
+$lines = explode("\n", trim($oe[0]));
+unset($lines[count($lines) - 1]);
+$spEnd = "</span>";
+array_push($lines, $spEnd);
+foreach($lines as $line){
+	echo $line;
+	echo "\n";
+}
 
-echo $o;
-
+print_r($oe[1]);
 ?>
 </div>
 </pre>
