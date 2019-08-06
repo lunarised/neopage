@@ -15,7 +15,7 @@ $lines = explode("\n", trim($oe[0]));
 unset($lines[count($lines) - 1]);
 $spEnd = "</span>";
 array_push($lines, $spEnd);
-echo "<div class="nfIcon">
+echo "<div class="nfLogo">
 foreach($lines as $line){
 	echo $line;
 	echo "\n";
