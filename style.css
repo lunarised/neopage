@@ -2,7 +2,10 @@ html{
 	background-color: #222222;
 	color: #dddddd;
 }
-.logo{
+.nfLogo{
 	float: left;
+}
+.nfInfo{
+	clear: left;
 }
 
