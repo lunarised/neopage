@@ -10,7 +10,7 @@
 <pre>
 <?PHP
 $o = shell_exec("neofetch | aha -n");
-$oe = explode('-------------- ', $o);
+$oe = preg_split('/-{3,}/', $o);
 $lines = explode("\n", trim($oe[0]));
 unset($lines[count($lines) - 1]);
 $spEnd = "</span>";
