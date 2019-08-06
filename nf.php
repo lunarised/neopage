@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-<title> System Diagnostics </title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="utf-8">
-
-</head>
-<body>
+<div class = "neopage">
 <pre>
 <?PHP
 $o = shell_exec("neofetch | aha -n");
@@ -27,5 +19,4 @@ print_r($oe[1]);
 ?>
 </div>
 </pre>
-</body>
-</html>
+</div>
