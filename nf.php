@@ -8,7 +8,6 @@
 </head>
 <body>
 <pre>
-<div class="logo">
 <?PHP
 $o = shell_exec("neofetch | aha -n");
 $oe = explode('--------------- ', $o);
@@ -16,10 +15,12 @@ $lines = explode("\n", trim($oe[0]));
 unset($lines[count($lines) - 1]);
 $spEnd = "</span>";
 array_push($lines, $spEnd);
+echo "<div class="nfIcon">
 foreach($lines as $line){
 	echo $line;
 	echo "\n";
 }
+echo "</div><div class="nfInfo">
 
 print_r($oe[1]);
 ?>
